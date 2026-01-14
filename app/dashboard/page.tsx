@@ -5,6 +5,7 @@ import AddNewButton from "@/features/dashboard/components/add-new-button";
 import AddRepo from "@/features/dashboard/components/add-repo-button";
 import EmptyState from '@/components/ui/empty-state';
 import { deleteProjectById, duplicateProjectById, editProjectById, getAllPlaygroundForUser } from '@/features/dashboard/actions';
+import ProjectTable from '@/features/dashboard/components/project-table';
 
 const Page =  async () => {
   const playgrounds = await getAllPlaygroundForUser();

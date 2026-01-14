@@ -43,6 +43,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { useState } from "react";
+
 import {
   MoreHorizontal,
   Edit3,
@@ -158,10 +159,7 @@ export default function ProjectTable({
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end" className="w-48">
                       <DropdownMenuItem asChild>
-                        <MarkedToggleButton
-                          markedForRevision={project.Starmark[0]?.isMarked}
-                          id={project.id}
-                        />
+                        
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
                         <Link
