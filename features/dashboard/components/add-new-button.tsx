@@ -26,6 +26,7 @@ const AddNewButton = () => {
     title :string
     template: "REACT" | "NEXTJS" |"EXPRESS" | "VUE" | "HONO" |"ANGULAR";
     description?: string;
+    
   }   ) => {
     setSelectedTemplate(data);
     const res = await createPlayground(data);
